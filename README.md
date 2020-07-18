@@ -31,8 +31,8 @@
 
 #### 4. SARSA（λ）
 λ其实是一个衰变值，让你知道离奖励越远的步可能并不是让你最快拿到奖励的步。所以我们现在站在宝藏所处的位置，回头看看我们所走的寻宝之路，离宝藏越近的脚步我们看得越清楚，越远的脚步越渺小很难看清。所以我们索性认为离宝藏越近的脚步越重要，越需要好好更新。和之前提到的奖励衰减值γ一样，λ是脚步衰减值，都是一个在0和1之间的数.
-![](https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df2f23185e732762d0f603c2d9?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1)
-![](https://iknow-pic.cdn.bcebos.com/10dfa9ec8a136327eb1f654e818fa0ec09fac7d9?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1)
+<br>![](https://iknow-pic.cdn.bcebos.com/63d9f2d3572c11df2f23185e732762d0f603c2d9?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1)
+<br>![](https://iknow-pic.cdn.bcebos.com/10dfa9ec8a136327eb1f654e818fa0ec09fac7d9?x-bce-process=image/resize,m_lfit,w_600,h_800,limit_1)
 <br>当λ=0：Sarsa(0)就变成了SARSA的单步更新：每次只能更新最近的一步
 <br>当λ=1：Sarsa(1)就变成了SARSA的回合更新：对所有步更新的力度一样
 <br>当λ在（0，1），则取值越大，离宝藏越近的步更新力度越大。以不同力度更新所有与宝藏相关的步
